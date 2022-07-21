@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context=".CreateContest">
+
+    <view
+        android:id="@+id/view"
+        class="android.widget.LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/background_view_login_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></view>
+
+    <TextView
+        android:id="@+id/createcontest_tv_quesnums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Enter the name of Contest below."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+    <EditText
+        android:id="@+id/createcontest_edt_nameofcontest"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/browser_actions_bg_grey"
+        android:textColor="#201515"
+        android:hint="Name of contest"
+        android:textColorHint="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createcontest_tv_quesnums" />
+
+    <TextView
+        android:id="@+id/createcontest_tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Please select category below."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createcontest_edt_nameofcontest" />
+
+    <Spinner
+        android:id="@+id/createcontest_spin_category"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createcontest_tv_category" />
+
+    <Button
+        android:id="@+id/createcontest_btn_addques"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_btn_login"
+        android:onClick="ShowDialog"
+        android:text="Add Question"
+        app:backgroundTint="#59D55D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createcontest_spin_category" />
+
+    <Button
+        android:id="@+id/createcontest_btn_showquestions"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_btn_login"
+        android:onClick="ShowQuestions"
+        android:text="Show Questions"
+        app:backgroundTint="#53877C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createcontest_btn_addques" />
+
+    <Button
+        android:id="@+id/createcontest_btn_savecontest"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_btn_login"
+        android:onClick="SaveContest"
+        android:text="Save Contest"
+        app:backgroundTint="#16F3B4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createcontest_btn_showquestions" />
+
+
+    <Button
+        android:id="@+id/createcontest_btn_logout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/background_btn_login"
+        android:onClick="logout"
+        android:text="Logout"
+        app:backgroundTint="#D55972"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <view
+        android:id="@+id/view2"
+        class="android.widget.LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/background_view_login_buttom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></view>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

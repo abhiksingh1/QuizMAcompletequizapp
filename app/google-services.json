@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1030879453238",
+    "project_id": "quizm---a-complete-quiz-b072b",
+    "storage_bucket": "quizm---a-complete-quiz-b072b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030879453238:android:248f582d9b9954b88df897",
+        "android_client_info": {
+          "package_name": "com.example.quizm_acompletequizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030879453238-9ca78kvnpp0vf51d7vndssoviekcjgc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quizm_acompletequizapp",
+            "certificate_hash": "fbe18dbd2d8fae1e50249e5b503430bd6ebe7834"
+          }
+        },
+        {
+          "client_id": "1030879453238-1s64crhpo7ktb45rek53vdtc4b553vrp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEfBNGuwJiB8k8BLk5bU2ZN0hSrHouwUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030879453238-1s64crhpo7ktb45rek53vdtc4b553vrp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

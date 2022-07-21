@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ABF1AE"
+    tools:context=".Home">
+
+
+    <view
+        android:id="@+id/view"
+        class="android.widget.LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/background_view_login_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></view>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_card_up"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        app:cardBackgroundColor="#F45C5C"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/createcontest"
+            android:layout_width="250dp"
+            android:layout_height="200dp"/>
+
+        <Button
+            android:id="@+id/home_btn_createContest"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Create Contest"
+            android:onClick="createContest"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#003D59"
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_card_down"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        app:cardBackgroundColor="#F45C5C"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/givecontest"
+            android:layout_width="250dp"
+            android:layout_height="200dp"/>
+
+        <Button
+            android:id="@+id/home_btn_giveContest"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Give Contest"
+            android:onClick="giveContest"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#003D59"
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <view
+        android:id="@+id/view4"
+        class="android.widget.LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/background_view_login_buttom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></view>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

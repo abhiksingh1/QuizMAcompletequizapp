@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+    <view
+        android:id="@+id/view"
+        class="android.widget.LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/background_view_login_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></view>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/quiz_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view"></ImageView>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="5dp"
+        android:text="SIGN IN"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"></TextView>
+
+    <EditText
+        android:id="@+id/signin_edt_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_edt_login"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/signin_edt_passwd"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_edt_login"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_edt_email" />
+
+    <Button
+        android:id="@+id/signin_btn_signin"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_btn_login"
+        android:backgroundTint="@color/white"
+        android:text="Sign IN"
+        app:backgroundTint="#59D55D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_edt_passwd" />
+
+    <TextView
+        android:id="@+id/signin_tv_signin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="New User? Click Here!"
+        android:textAlignment="center"
+        android:textColor="#4EDAEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_btn_signin" />
+
+    <ProgressBar
+        android:id="@+id/signin_pbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_tv_signin" />
+
+
+        <view
+        class="android.widget.LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/background_view_login_buttom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></view>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
